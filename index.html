@@ -1,42 +1,71 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Eye Team Gene Library</title>
+  <meta charset="UTF-8">
+  <title>Gene Editing Library</title>
   <style>
-    body { font-family: Arial; padding: 20px; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
     table {
       width: 100%;
       border-collapse: collapse;
-      margin-top: 20px;
+      margin-top: 30px;
+      background-color: #fff;
     }
+
     th, td {
       border: 1px solid #ccc;
-      padding: 10px;
+      padding: 12px;
       text-align: center;
+      vertical-align: middle;
     }
+
+    th {
+      background-color: #eeeeee;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
     img {
-      width: 100px;
+      max-width: 200px;
+      height: auto;
+      border-radius: 8px;
     }
   </style>
 </head>
 <body>
-  <h2>Gene Library</h2>
-  <table>
-    <tr>
-      <th>Gene</th>
-      <th>gRNA Guide</th>
-      <th>Forward Primer</th>
-      <th>Reverse Primer</th>
-      <th>MiSeq Graph</th>
-    </tr>
-    <tr>
-      <td>shisa2ab</td>
-      <td>GGTGACTTCATATCGTGGAG</td>
-      <td>TCGGAGCATGAGTAACCTTG</td>
-      <td>TGGTTTCCAGAGCGTCTGAT</td>
-      <td><img src="shisa2ab_miseq.png" alt="MiSeq graph"></td>
-    </tr>
-    <!-- Add more rows here -->
-  </table>
+
+<h1>Gene Editing Library</h1>
+
+<table>
+  <tr>
+    <th>Gene</th>
+    <th>gRNA Guide</th>
+    <th>Forward Primer</th>
+    <th>Reverse Primer</th>
+    <th>MiSeq Graph</th>
+  </tr>
+
+  <tr>
+    <td>shisa2ab</td>
+    <td>GAGAAAGTCTCTGCATTCGT</td>
+    <td>TGGAGCCCCTTAATAGTTCTCA</td>
+    <td>TAGCATCTCCATCTTCCTCCTC</td>
+    <td><img src="miseq graphs/ppcr1_frameshift.png" alt="MiSeq Graph"></td>
+  </tr>
+
+</table>
+
 </body>
 </html>
