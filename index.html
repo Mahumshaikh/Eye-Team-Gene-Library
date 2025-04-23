@@ -37,11 +37,20 @@
       background-color: #f2f2f2;
     }
 
+      /* Style for the image */
     img {
-      width: 80%;  /* Adjust the size of the image */
+      max-width: 200px;
       height: auto;
       border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
     }
+
+    /* Zoom effect on click */
+    img:active {
+      transform: scale(1.5); /* Zoom effect */
+    }
+
   </style>
 </head>
 <body>
